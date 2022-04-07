@@ -13,7 +13,7 @@ export default function Homescreen(){
     function submit()
     {
         setResult('loading...')
-        axios.post('http://127.0.0.1:5000/postdetails',{
+        axios.post('https://timezonetask.herokuapp.com/postdetails',{
             task:task,
             current_time:currenttime
         })
@@ -24,7 +24,7 @@ export default function Homescreen(){
     function enhancesubmit()
     {
         setEnhanceResult('loading...')
-        axios.post('http://127.0.0.1:5000/postenhancedetails',{
+        axios.post('https://timezonetask.herokuapp.com/postenhancedetails',{
             task:enhancetask,
             current_time:enhancecurrenttime
         })
