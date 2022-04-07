@@ -23,12 +23,6 @@ def postDetails():
         except Exception as e:
             return jsonify({'message':e})
         else:
-            # if time2<time1:
-            #     return jsonify({'message': str(time1)})
-            # if time2>=time1 and time2<=time3:
-            #     return jsonify({'message':"True"})
-            # else:
-            #     return jsonify({'message':"False"})
             result=verifytime(time1,time2,time3)
             return jsonify({'message':result})
     except Exception as e:
